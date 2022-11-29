@@ -1,7 +1,9 @@
 import java.util.*
 
 fun main(args: Array<String>) {
+    var teste = args[0]
     println("Hello ${args[0]}!")
+    //println("Hello $teste!")
     dayOfWeek()
     println()
 
@@ -18,7 +20,7 @@ fun main(args: Array<String>) {
 }
 
 fun dayOfWeek() {
-    var day = ""          //declarando variável 'day' e inicializando como String
+    var day = ""          // declarando variável 'day' e inicializando como String
 
     println("What day is it today?")
     when (Calendar.getInstance().get(Calendar.DAY_OF_WEEK)) { //utilizando a biblioteca JAVA Calendar para pegar o dia da semana
