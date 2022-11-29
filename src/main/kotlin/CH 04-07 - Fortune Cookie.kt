@@ -1,8 +1,8 @@
 fun main() {
-    for (i in 1..10) {
-        val fortune = getFortuneCookie()
+    for (i in 1..10) {                          // laço para repetição de 10 vezes
+        val fortune = getFortuneCookie()            // chama a função que retorna o conteúdo do cookie
         println("Your fortune is: $fortune")
-        if (fortune.contains("Take it easy")) break
+        if (fortune.contains("Take it easy")) break  // sai do laço caso a variável contenha "Take easy"
     }
 }
 
@@ -17,6 +17,6 @@ fun getFortuneCookie(): String {
         "Treasure your friends because they are your greatest fortune."
     )
     print("Enter your birthday: ")
-    val birthday = readLine()?.toIntOrNull() ?: 1
-    return fortuneList[birthday.rem(fortuneList.size)]
+    val birthday = readLine()?.toIntOrNull() ?: 1       // recebe a entrada do usuário, transforma para Int, se for nulo, seta o valor em 1
+    return fortuneList[birthday.rem(fortuneList.size)]      // retorna o valor do cookie com base no index do array, que é escolhido pelo restante da divisão
 }
