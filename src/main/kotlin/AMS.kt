@@ -17,17 +17,18 @@ fun randomDay(): String {
 }
 
 fun fishFood(day: String): String {
-    var food = "fasting"
+    //var food = "fasting"
 
-    when (day) {
-        "Monday" -> food = "flakes"
-        "Tuesday" -> food = "pellets"
-        "Wednesday" -> food = "redworms"
-        "Thursday" -> food = "granules"
-        "Friday" -> food = "mosquitoes"
-        "Saturday" -> food = "lettuce"
-        "Sunday" -> food = "plankton"
+    return when (day) {
+        "Monday" -> "flakes"
+        //"Tuesday" -> "pellets"
+        "Wednesday" -> "redworms"
+        "Thursday" -> "granules"
+        "Friday" -> "mosquitoes"
+        //"Saturday" -> "lettuce"
+        "Sunday" -> "plankton"
+        else -> "fasting"
     }
-    return food
+
 
 }
