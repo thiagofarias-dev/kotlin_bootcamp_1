@@ -5,11 +5,16 @@ fun main(args: Array<String>) {
     feedTheFish()
 }
 
+/*fun shouldChangeWater(day: String, temperature: Int = 22, dirty : Int = 20) {
+
+}*/
+
+
 fun feedTheFish() {
     val day = randomDay()
     val food = fishFood(day)
     println("Today is $day and the fish eat $food")
-}
+ }
 
 fun randomDay(): String {
     val week = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
